@@ -39,6 +39,15 @@ public class matrix01 {
     private static final int cMatrixItemMin = -100;
     private static final int cMatrixItemMax = 100;
 
+    private static final String cInputSizeFormat = "Введите размер квадратной матрицы (целое число от %d до %d): ";
+    private static final String cOutputOutOfRange = "Число %d лежит вне диапазона!";
+    private static final String cOutputMatrixTitle = "Матрица: ";
+    private static final String cOutputMatrixItemFormat = "%8.1f";
+
+    private static final String cOutputMinFormat = "Минимум:  %8.1f";
+    private static final String cOutputMaxFormat = "Максимум: %8.1f";
+    private static final String cOutputAvgFormat = "Среднее:  %8.1f";
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
@@ -47,15 +56,13 @@ public class matrix01 {
         boolean bIsOK = false;
 
         while (!bIsOK) {
-            System.out.printf(
-                    "Введите размер квадратной матрицы (целое число от %d до %d): ",
-                    cMatrixSizeMin, cMatrixSizeMax);
+            System.out.printf(cInputSizeFormat, cMatrixSizeMin, cMatrixSizeMax);
             iMatrixSize = in.nextInt();
             if ((iMatrixSize >= cMatrixSizeMin) && (iMatrixSize <= cMatrixSizeMax)) {
                 bIsOK = true;
                 break;
             } else {
-                System.out.printf("Число %d лежит вне диапазона!", iMatrixSize);
+                System.out.printf(cOutputOutOfRange, iMatrixSize);
                 System.out.println();
             }
         }
@@ -64,14 +71,43 @@ public class matrix01 {
         double[][] matrix = new double[iMatrixSize][iMatrixSize];
 
         // Заполнение массива
-        System.out.println("Матрица:");
+        double dMin = 0;
+        double dMax = 0;
+        double dSum = 0;
+        boolean bMinMaxInit = true;
+        System.out.println(cOutputMatrixTitle);
         for (int row = 0; row < iMatrixSize; row++) {
             for (int col = 0; col < iMatrixSize; col++) {
                 matrix[row][col] = GetRandom(cMatrixItemMin, cMatrixItemMax);
-                System.out.printf("%8.1f", matrix[row][col]);
+                System.out.printf(cOutputMatrixItemFormat, matrix[row][col]);
+
+                // Инициализация мин и макс
+                if (bMinMaxInit) {
+                    bMinMaxInit = false;
+                    dMin = dMax = matrix[row][col];
+                }
+
+                // Выбор наименьшего значения
+                if (matrix[row][col] < dMin) {
+                    dMin = matrix[row][col];
+                }
+
+                // Выбор наибольшего значения
+                if (matrix[row][col] > dMax) {
+                    dMax = matrix[row][col];
+                }
+
+                // Сумма элементов матрицы
+                dSum += matrix[row][col];
             }
             System.out.println();
         }
-
+        System.out.printf(cOutputMinFormat, dMin);
+        System.out.println();
+        System.out.printf(cOutputMaxFormat, dMax);
+        System.out.println();
+        System.out.printf(cOutputAvgFormat, dSum / Math.pow(iMatrixSize, 2));
+        System.out.println();
     }
+
 }
