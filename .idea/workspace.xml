@@ -44,34 +44,35 @@
     <session id="362852823">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="2" />
-          <entry key="java" value="2606" />
+          <entry key="java" value="3746" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2606" />
+          <entry key="JAVA" value="3746" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="4" />
+          <entry key="java" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="4" />
+          <entry key="JAVA" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -108,21 +109,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/matrix06.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="146" column="38" lean-forward="true" selection-end-line="191" />
+            <state relative-caret-position="3212">
+              <caret line="146" column="38" selection-end-line="191" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/matrix07.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="75" column="44" selection-end-line="233" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/matrix07.java">
+        <entry file="file://$PROJECT_DIR$/src/matrix08.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="75" column="44" lean-forward="true" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
+            <state relative-caret-position="89">
+              <caret line="218" column="20" lean-forward="true" selection-start-line="218" selection-start-column="20" selection-end-line="218" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#GetUserInputInt#0;class#200:8858" />
-                <element signature="class#UserInputResultString#0;class#936:8583" />
               </folding>
             </state>
           </provider>
@@ -149,6 +160,7 @@
         <option value="$PROJECT_DIR$/src/matrix06.java" />
         <option value="$PROJECT_DIR$/src/matrix7a.java" />
         <option value="$PROJECT_DIR$/src/matrix07.java" />
+        <option value="$PROJECT_DIR$/src/matrix08.java" />
       </list>
     </option>
   </component>
@@ -163,8 +175,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,6 +191,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -203,14 +215,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.matrix07">
-    <configuration name="matrix02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="matrix02" />
-      <module name="home" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.matrix08">
     <configuration name="matrix04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="matrix04" />
       <module name="home" />
@@ -232,6 +237,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="matrix08" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="matrix08" />
+      <module name="home" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="matrix7a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="matrix7a" />
       <module name="home" />
@@ -240,19 +252,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.matrix02" />
       <item itemvalue="Application.matrix04" />
       <item itemvalue="Application.matrix06" />
       <item itemvalue="Application.matrix07" />
       <item itemvalue="Application.matrix7a" />
+      <item itemvalue="Application.matrix08" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.matrix08" />
         <item itemvalue="Application.matrix07" />
         <item itemvalue="Application.matrix7a" />
         <item itemvalue="Application.matrix06" />
         <item itemvalue="Application.matrix04" />
-        <item itemvalue="Application.matrix02" />
       </list>
     </recent_temporary>
   </component>
@@ -272,7 +284,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12724936" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1285347" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -281,7 +293,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33647376" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.74831766" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39973083" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -304,6 +316,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/matrix7a.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="46" selection-start-line="10" selection-start-column="12" selection-end-line="11" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/matrix01.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="704">
@@ -327,26 +346,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/matrix06.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="146" column="38" lean-forward="true" selection-end-line="191" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/matrix7a.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="46" selection-start-line="10" selection-start-column="12" selection-end-line="11" selection-end-column="46" />
+        <state relative-caret-position="3212">
+          <caret line="146" column="38" selection-end-line="191" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/matrix07.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="75" column="44" lean-forward="true" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
+          <caret line="75" column="44" selection-end-line="233" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#GetUserInputInt#0;class#200:8858" />
-            <element signature="class#UserInputResultString#0;class#936:8583" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/matrix08.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="218" column="20" lean-forward="true" selection-start-line="218" selection-start-column="20" selection-end-line="218" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
